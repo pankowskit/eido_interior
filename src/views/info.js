@@ -1,11 +1,21 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import InfoS1 from "../components/info-s1";
+import InfoS2 from "../components/info-s2";
+import InfoS3 from "../components/info-s3";
+import InfoS4 from "../components/info-s4";
 
-function Info(props){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Info extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj bg-dark p-0">
+                <InfoS1/>
+                <InfoS2/>
+                <InfoS3/>
+                <InfoS4/>
+            </Container>    
+        );
+    }
 }
 
 export default Info;
