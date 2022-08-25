@@ -1,11 +1,19 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import OfferS1 from "../components/offer-s1";
+import OfferS2 from "../components/offer-s2";
+import OfferS3 from "../components/offer-s3";
 
-function Offer(props){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Offer extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-100vh bg-dark p-0">
+                <OfferS1/>
+                <OfferS2/>
+                <OfferS3/>
+            </Container>    
+        );
+    }
 }
 
 export default Offer;
